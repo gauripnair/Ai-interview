@@ -1,19 +1,28 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SplashScreen from "./SplashScreen"; // Ensure the file path is correct
-import NextPage from "./NextPage"; // Ensure the file path is correct
+import SplashScreen from "./SplashScreen"; // Splash screen component
+import Login from "./New1"; // Login component from New1.js
+import Signup from "./Signup"; // Signup (create profile) component
+import ProfilePage from "./ProfilePage"; // Profile page component
 
-const App = () => {
+function App() {
   return (
     <Router>
       <Routes>
+        {/* Splash Screen */}
         <Route path="/" element={<SplashScreen />} />
-        <Route path="/next" element={<NextPage />} />
+
+        {/* Login Page */}
+        <Route path="/login" element={<Login />} />
+
+        {/* Signup (Create Profile) Page */}
+        <Route path="/signup" element={<Signup />} />
+
+        {/* Profile Page */}
+        <Route path="/profile" element={<ProfilePage />} />
       </Routes>
     </Router>
   );
-};
+}
 
 export default App;
-
-

@@ -10,4 +10,3 @@ const NextPage = () => {
 };
 
 export default NextPage; // Ensure this line is present
-

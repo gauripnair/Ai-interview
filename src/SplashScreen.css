@@ -1,69 +1,68 @@
 .splash-container {
-    background: linear-gradient(135deg, #14162d, #331153);
-    color: white;
-    text-align: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .header {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    right: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .login-button {
-    background: transparent;
-    border: 1px solid white;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .main-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .content h1,
-  .content h2 {
-    margin: 0;
-    font-size: 3rem;
-    font-weight: bold;
-  }
-  
-  .content h2 {
-    color: #b07dfc;
-  }
-  
-  .get-started {
-    background: #b07dfc;
-    border: none;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 5px;
-    margin-top: 20px;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .get-started:hover {
-    background: #9a4dcf;
-  }
-  
+  background: linear-gradient(135deg, #14162d, #331153);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.login-button {
+  background: transparent;
+  border: 1px solid white;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content h1,
+.content h2 {
+  margin: 0;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.content h2 {
+  color: #b07dfc;
+}
+
+.get-started {
+  background: #b07dfc;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.get-started:hover {
+  background: #9a4dcf;
+}

@@ -6,14 +6,16 @@ const SplashScreen = () => {
   const navigate = useNavigate();
 
   const handleGetStarted = () => {
-    navigate("/next");
+    navigate("/login"); // Navigate to the New1.js (Login) page
   };
 
   return (
     <div className="splash-container">
       <header className="header">
         <div className="logo">AI ASSIST</div>
-        <button className="login-button">Login</button>
+        <button className="login-button" onClick={() => navigate("/login")}>
+          Login
+        </button>
       </header>
       <main className="main-content">
         <div className="content">
@@ -28,5 +30,4 @@ const SplashScreen = () => {
   );
 };
 
-export default SplashScreen; // Ensure this line is present
-
+export default SplashScreen;
