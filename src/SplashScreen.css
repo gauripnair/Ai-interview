@@ -1,12 +1,13 @@
 .splash-container {
   background: linear-gradient(135deg, #14162d, #331153);
   color: white;
-  text-align: center;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+  position: relative;
 }
 
 .header {
@@ -15,13 +16,14 @@
   left: 20px;
   right: 20px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Space between logo and login button */
   align-items: center;
 }
 
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  text-align: right; /* Align text within the logo container to the left */
 }
 
 .login-button {
@@ -33,17 +35,48 @@
   cursor: pointer;
 }
 
+.login-button:hover{
+  background: #fff;
+    color: #4d0280;
+}
+
 .main-content {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+}
+
+.robot-image {
+  height: 400px; /* Adjust size as needed */
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: blur(0px); /* Apply blur effect */
+  opacity: 0.8; /* Slight transparency for a smoother look */
+}
+
+.person-image {
+  height: 400px; /* Adjust size as needed */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  filter: blur(0px); /* Apply blur effect */
+  opacity: 0.8; /* Slight transparency for a smoother look */
+}
+
+.content {
+  z-index: 1;
 }
 
 .content h1,
 .content h2 {
   margin: 0;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 

@@ -1,7 +1,7 @@
 /* General styles */
 .login-container {
     font-family: Arial, sans-serif;
-    background-color: #1a1a2e;
+    background-color:#331153;
     color: white;
     min-height: 100vh;
     display: flex;
@@ -15,7 +15,7 @@
   
   .login-header h1 {
     font-size: 4vw; /* Adjust font size based on viewport width */
-    color: #ff006e;
+    color: #b07dfc;
     margin-bottom: 2rem;
   }
   
@@ -61,7 +61,7 @@
   }
   
   .login-btn {
-    background: linear-gradient(to right, #ff006e, #ff6e40);
+    background: linear-gradient(to right,#331153, #b07dfc);
     border: none;
     padding: 0.8rem 1.5rem;
     color: white;
@@ -79,7 +79,7 @@
   .forgot-password {
     display: block;
     margin: 1rem 0;
-    color: #ff6e40;
+    color:  #b07dfc;
     text-decoration: none;
   }
   
@@ -89,7 +89,7 @@
   }
   
   .signup-link a {
-    color: #ff006e;
+    color: #b07dfc;
     text-decoration: none;
   }
   

@@ -1,0 +1,42 @@
+/* Session.css */
+
+.session-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color:linear-gradient(135deg, #14162d, #331153);
+    font-family: Arial, sans-serif;
+    text-align: center;
+  }
+  
+  .session-page h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .session-page p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 600px;
+    line-height: 1.6;
+  }
+  
+  .session-page button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .session-page button:hover {
+    background-color: #0056b3;
+  }
+  

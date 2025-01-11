@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+  }
+  
+  .profile-container {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .profile-title {
+    font-size: 36px;
+    color: #bb86fc;
+    margin-bottom: 20px;
+  }
+  
+  .profile-card {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .profile-avatar {
+    margin-right: 15px;
+  }
+  
+  .avatar {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .profile-details {
+    text-align: left;
+  }
+  
+  .profile-stats {
+    margin-top: 20px;
+  }
+  
+  .stat {
+    margin-bottom: 20px;
+  }
+  
+  .stat-value {
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #333;
+    border-radius: 10px;
+    padding: 10px;
+    display: inline-block;
+  }
+  
+  .score-circle {
+    width: 80px;
+    height: 80px;
+    border: 5px solid #bb86fc;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  
+  .score-circle span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .strength-weakness {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .strength-column:hover {
+    background-color: #6c42a0;
+  }
+  
+  .weakness-column:hover {
+    background-color: #7743b2;
+  }
+  
+  .improvement-column:hover {
+    background-color: #8c57d1;
+  }
+  
+  .column-title {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .icon {
+    width: 24px;
+    height: 24px;
+    margin-right: 8px;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .strength-column:hover .icon {
+    transform: scale(1.3);
+  }
+  
+  .weakness-column:hover .icon {
+    transform: scale(1.3);
+  }
+  
+  .improvement-column:hover .icon {
+    transform: scale(1.3);
+  }
+  
+  .box {
+    background-color: #333;
+    height: 50px;
+    border-radius: 10px;
+  }

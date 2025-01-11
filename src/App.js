@@ -1,9 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import SplashScreen from "./SplashScreen"; // Splash screen component
-import Login from "./New1"; // Login component from New1.js
-import Signup from "./Signup"; // Signup (create profile) component
-import ProfilePage from "./ProfilePage"; // Profile page component
+import SplashScreen from "./SplashScreen";
+import Login from "./New1";
+import Signup from "./Signup";
+import Profile from "./Profile";
+import Homepage from "./Homepage";
+import TechnicalSession from "./TechnicalSession"; // Import TechnicalSession
+import NonTechnicalSession from "./NonTechnicalSession"; // Import NonTechnicalSession
 
 function App() {
   return (
@@ -19,10 +22,22 @@ function App() {
         <Route path="/signup" element={<Signup />} />
 
         {/* Profile Page */}
-        <Route path="/profile" element={<ProfilePage />} />
+        <Route path="/profile" element={<Profile />} />
+
+        {/* Homepage */}
+        <Route path="/homepage" element={<Homepage />} />
+
+        {/* Technical Session Page */}
+        <Route path="/technical" element={<TechnicalSession />} />
+
+        {/* Non-Technical Session Page */}
+        <Route path="/non-technical" element={<NonTechnicalSession />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
+
+

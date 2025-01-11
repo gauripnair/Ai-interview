@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Login.css";
 
 const Login = () => {
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    navigate("/homepage"); // Redirect to Homepage
+  };
+
   return (
     <div className="login-container">
       <div className="login-header">
@@ -21,10 +27,16 @@ const Login = () => {
           <input type="checkbox" id="remember" />
           <label htmlFor="remember">Remember Me</label>
         </div>
-        <button className="login-btn">Log In</button>
-        <Link to="/signup" className="forgot-password">Forgot Password?</Link>
+        <button className="login-btn" onClick={handleLogin}>
+          Log In
+        </button>
+        <Link to="/signup" className="forgot-password">
+          Forgot Password?
+        </Link>
         <div className="signup-link">
-          <p>Don't have an account? <Link to="/signup">Sign up</Link></p>
+          <p>
+            Don't have an account? <Link to="/signup">Sign up</Link>
+          </p>
         </div>
       </div>
     </div>
@@ -32,3 +44,4 @@ const Login = () => {
 };
 
 export default Login;
+
